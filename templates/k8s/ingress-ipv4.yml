@@ -1,9 +1,9 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: captioned-images-web-ingress
+  name: captioned-images-ipv4-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: captioned-images-web-address
+    kubernetes.io/ingress.global-static-ip-name: captioned-images-ipv4-address
 spec:
   rules:
   - host: ${DNS_WEBSITE}
@@ -16,5 +16,5 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: captioned-images-web-assets
+          serviceName: captioned-images-assets
           servicePort: 80
