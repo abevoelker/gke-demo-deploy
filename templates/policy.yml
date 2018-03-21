@@ -1,0 +1,5 @@
+bindings:
+- members:
+  - serviceAccount:sql-user@${PROJECT_ID}.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+version: 1
