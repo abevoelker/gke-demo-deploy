@@ -1,7 +1,7 @@
 #!/bin/bash
 set -u
 
-SUB_VARS='$PROJECT_ID:$BUCKET_NAME:$COMMIT_SHA:$CONNECTION_NAME'
+SUB_VARS='$PROJECT_ID:$BUCKET_NAME:$COMMIT_SHA:$CONNECTION_NAME:$DNS_WEBSITE:$DNS_ASSETS'
 
 # check required variables
 for i in $(echo $SUB_VARS | tr ":" "\n")
