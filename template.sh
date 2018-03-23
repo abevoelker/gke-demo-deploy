@@ -14,7 +14,7 @@ do
 done
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-for f in $(find $DIR/templates -type f)
+for f in $(find $DIR/templates -type f | sort)
 do
   [[ $f =~ $DIR\/templates(.*) ]] && export OUTPUT_FILE=".${BASH_REMATCH[1]}"
   mkdir -p $(dirname $OUTPUT_FILE)
